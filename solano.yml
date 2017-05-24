@@ -23,3 +23,6 @@ hooks:
   worker: sleep 10
   post: sleep 30
   post_build: sleep 10
+cache:
+  key_paths: []
+  save_paths: [] 
