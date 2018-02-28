@@ -9,12 +9,21 @@ system:
 :python:
   python_version: 2.7
   pip_requirements_file: requirements.txt
-:tests:
- - type: nosetests
-   mode: parallel
-   output: exit-status
-   files:
-     - test/*.py
+
+profiles:
+  a:
+    tests:
+      - "exit 0"
+  b:
+    tests:
+      - "exit 0"
+  c:
+    tests:
+      - "exit 0"
+pipeline:
+  a:
+    b: c
+
 coverage:
   version: 2
   enabled: true
