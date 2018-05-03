@@ -15,6 +15,7 @@ system:
    output: exit-status
    files:
      - test/*.py
+script: bin/test
 coverage:
   version: 2
   enabled: true
