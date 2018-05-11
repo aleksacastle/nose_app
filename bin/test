@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+sleep 20
 echo "Agent2 is running..."
 
