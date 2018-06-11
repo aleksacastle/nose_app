@@ -11,26 +11,19 @@ system:
   pip_requirements_file: requirements.txt
 profiles:
   a:
-    tests:
-      - "exit 0"
+    script: bin/test
   b:
-    tests:
-      - "exit 0"
+    script: bin/test
   c:
-    tests:
-      - "exit 0"
+    script: bin/test
   d:
-    tests:
-      - "exit 0"
+    script: bin/test
   e:
-    tests:
-      - "exit 0"
+    script: bin/test
   f:
-    tests:
-      - "exit 0"
+    script: bin/test
   g:
-    tests:
-      - "exit 0"
+    script: bin/test"
 pipeline:
   a:
     b:
