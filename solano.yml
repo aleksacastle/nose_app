@@ -9,29 +9,7 @@ system:
 :python:
   python_version: 2.7
   pip_requirements_file: requirements.txt
-profiles:
-  a:
-    script: bin/test
-  b:
-    script: bin/test
-  c:
-    script: bin/test
-  d:
-    script: bin/test
-  e:
-    script: bin/test
-  f:
-    script: bin/test
-  g:
-    script: bin/test"
-pipeline:
-  a:
-    b:
-      - d
-      - e
-    c:
-      - f
-      - g
+script: bin/test
 coverage:
   version: 2
   enabled: true
