@@ -9,6 +9,7 @@ system:
 :python:
   python_version: 2.7
   pip_requirements_file: requirements.txt
+script: bin/test
 profiles:
   a:
     tests:
@@ -39,7 +40,6 @@ pipeline:
     c:
       - f
       - g
-script: bin/test
 coverage:
   version: 2
   enabled: true
