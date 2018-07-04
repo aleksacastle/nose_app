@@ -8,7 +8,7 @@
   pip_requirements_file: requirements.txt
 
 plan:
-- default
+- default1
 - second
 
 profiles:
