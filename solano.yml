@@ -8,12 +8,12 @@
   pip_requirements_file: requirements.txt
 
 plan:
-- fetch
+- default
 - second
 
 profiles:
 
-  fetch:
+  default:
     environment:
       MY_PROFILE: "first"
     :tests:
